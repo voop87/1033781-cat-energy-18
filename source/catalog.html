@@ -10,10 +10,12 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+      <a href="/source/index.html" class="page-header__logo logo">
         <img class="page-header__logo-image" src="#" alt="Логотип Cat Energy" >
       </a>
-      <span class="page-header__text-logo"><b>Cat</b> Energy</span>
+      <a href="/source/index.html">
+        <span class="page-header__text-logo"><strong>Cat</strong> Energy</span>
+      </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -35,7 +37,7 @@
 
   <main class="page-main">
     <section class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
+      <h1 class="catalog__title page-title">Каталог продукции</h1>
       <div class="catalog__main">
         <ul class="catalog__list">
           <li class="catalog__item item-card">
@@ -43,7 +45,7 @@
               <h3 class="item-card__title">Cat Energy Pro 500 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -66,7 +68,7 @@
               <h3 class="item-card__title">Cat Energy Pro 1000 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -89,7 +91,7 @@
               <h3 class="item-card__title">Cat Energy Pro 500 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -112,7 +114,7 @@
               <h3 class="item-card__title">Cat Energy Pro 1000 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -135,7 +137,7 @@
               <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -158,7 +160,7 @@
               <h3 class="item-card__title">Cat Energy Slim 1000 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -181,7 +183,7 @@
               <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
             </a>
             <a href="#">
-              <img class="item-card__image" src="#" alt="Фото товара Cat Energy" width="140" height="140">
+              <img class="item-card__image" src="https://via.placeholder.com/150x150" alt="Фото товара Cat Energy">
             </a>
             <table class="item-card__data">
               <tr>
@@ -204,44 +206,53 @@
             <p class="show-all__text">
               На самом деле вкусов гораздо больше!
             </p>
-            <a class="btn btn--show-all" href="#">Показать все</a>
+            <a class="btn btn__grey" href="#">Показать все</a>
           </li>
         </ul>
       </div>
-      <div class="catalog-additional additional">
-        <h2 class="additional__title">Дополнительные товары</h2>
-        <ul class="additional__list">
-          <li class="additional__item additional-card">
-            <h3 class="additional-card__title">Сахарозаменитель</h3>
-            <p class="additional-card__volume">1 упаковка (100 г)</p>
-            <p class="additional-card__price">200 р.</p>
-            <a class="additional-card__btn btn" href="#">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <h3 class="additional-card__title">Питьевая вода</h3>
-            <p class="additional-card__volume">5 литров</p>
-            <p class="additional-card__price">50 р.</p>
-            <a class="additional-card__btn btn" href="#">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <h3 class="additional-card__title">Молоко</h3>
-            <p class="additional-card__volume">1 литр</p>
-            <p class="additional-card__price">100 р.</p>
-            <a class="additional-card__btn btn" href="#">Заказать</a>
-          </li>
-          <li class="additional__item">
-            <h3 class="additional-card__title">Витамины</h3>
-            <p class="additional-card__volume">1 упаковка (30 г)</p>
-            <p class="additional-card__price">300 р.</p>
-            <a class="additional-card__btn btn" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="additional__promo">
-          <b class="additional__promo-text">
-            Закажите все
-            и получите чехол для кота в подарок!
-          </b>
-        </div>
+    </section>
+    <section class="catalog-additional additional">
+      <h2 class="additional__title section-title">Дополнительные товары</h2>
+      <ul class="additional__list">
+        <li class="additional__item additional-card">
+          <h3 class="additional-card__title">Сахарозаменитель</h3>
+          <div class="additional-card__description">
+            <span class="additional-card__volume">1 упаковка (100 г)</span>
+            <span class="additional-card__price">200 р.</span>
+          </div>
+          <a class="additional-card__btn btn" href="#">Заказать</a>
+        </li>
+        <li class="additional__item">
+          <h3 class="additional-card__title">Питьевая вода</h3>
+          <div class="additional-card__description">
+            <span class="additional-card__volume">5 литров</span>
+            <span class="additional-card__price">50 р.</span>
+          </div>
+          <a class="additional-card__btn btn" href="#">Заказать</a>
+        </li>
+        <li class="additional__item">
+          <h3 class="additional-card__title">Молоко</h3>
+          <div class="additional-card__description">
+            <span class="additional-card__volume">1 литр</span>
+            <span class="additional-card__price">100 р.</span>
+          </div>
+          <a class="additional-card__btn btn" href="#">Заказать</a>
+        </li>
+        <li class="additional__item">
+          <h3 class="additional-card__title">Витамины</h3>
+          <div class="additional-card__description">
+            <span class="additional-card__volume">1 упаковка (30 г)</span>
+            <span class="additional-card__price">300 р.</span>
+          </div>
+          <a class="additional-card__btn btn" href="#">Заказать</a>
+        </li>
+      </ul>
+      <div class="additional__promo">
+        <svg></svg>
+        <b class="additional__promo-text">
+          Закажите все
+          и получите чехол для кота в подарок!
+        </b>
       </div>
     </section>
   </main>
@@ -249,16 +260,16 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
-        <header class="page-footer__header">
-          <b class="page-footer__promo">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="page-footer__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
-        </header>
-        <div class="page-footer__map"></div>
+        <b class="page-footer__promo">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="page-footer__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
       </div>
+      <div class="page-footer__map"></div>
       <div class="page-footer__bottom">
-        <span class="page-footer__text-logo"><b>Cat</b> Energy</span>
+        <a href="/source/index.html">
+          <span class="page-footer__text-logo"><strong>Cat</strong> Energy</span>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
