@@ -1,0 +1,47 @@
+.main-nav {
+  min-height: 65px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  .no-style();
+}
+
+.main-nav__toggle {
+  display: block;
+  padding: 0;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 24px;
+  height: 18px;
+
+  background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  background-size: 24px 18px;
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 18px;
+  height: 18px;
+
+  background: url("../img/icon-close.svg") no-repeat 50% 50%;
+  background-size: 18px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    min-height: unset;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    min-width: 480px;
+    display: flex;
+  }
+}
