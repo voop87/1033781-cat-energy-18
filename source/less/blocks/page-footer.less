@@ -2,16 +2,33 @@
   background-color: #f2f2f2;
 }
 
+.page-footer__top {
+  display: flex;
+}
+
 .page-footer__promo {
+  width: 50%;
+  display: block;
+
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
 }
 
 .page-footer__address {
+  width: 50%;
+
   font-family: @arial;
   font-style: normal;
   font-size: 14px;
+}
+
+.page-footer__map {
+  width: 100vw;
+  height: 362px;
+
+  background: #f2f2f2 url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+  background-size: 100vw cover;
 }
 
 .page-footer__bottom {

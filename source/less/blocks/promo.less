@@ -39,3 +39,22 @@
     color: #111111;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .promo {
+    min-height: 597px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: 697px;
+      background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
