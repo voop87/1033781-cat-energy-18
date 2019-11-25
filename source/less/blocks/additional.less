@@ -14,7 +14,6 @@
 }
 
 .additional__promo {
-  min-height: 289px;
   margin: 40px 0 35px;
 
   background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat 50% 0;
@@ -27,4 +26,40 @@
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__promo {
+    min-height: 200px;
+    margin: 69px 0 76px;
+
+    background: #68b738 url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
+    background-size: 708px 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    margin: 91px 0 86px;
+
+    border-top: 3px solid #68b738;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__promo {
+    min-height: 289px;
+    width: 245px;
+    margin: 0;
+
+    background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat 50% 0;
+  }
 }
