@@ -32,14 +32,16 @@
   </header>
 
   <main class="page-main">
-    <div class="wrapper">
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__wrapper wrapper">
         <h1 class="form__title section-title">Подбор программы</h1>
         <p class="form__text">
           Заполните анкету и мы подберем
           программу питания для вашего кота
         </p>
-        <fieldset class="form__fieldset">
+      </div>
+      <fieldset class="form__fieldset">
+        <div class="form__wrapper wrapper">
           <label class="form__label" for="cat-name">Имя:*</label>
           <input class="form__input" type="text" name="cat-name" id="cat-name" value="Барсик" required>
           <label class="form__label" for="cat-weight">Вес (кг):*</label>
@@ -54,19 +56,25 @@
             <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             <input class="form__radio" type="radio" name="fit-programm" id="need-advice" value="need-advice">
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__wrapper wrapper">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <label class="form__label" for="email">E-mail:*</label>
           <input class="form__input" type="email" name="user-email" id="email" value="Kuklachev@gmail.com" required>
           <label class="form__label" for="user-phone">Телефон:*</label>
           <input class="form__input" type="tel" name="user-phone" id="user-phone" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="8 (960) 900-60-90" required>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__wrapper wrapper">
           <legend class="form__legend">Комментарий</legend>
           <textarea class="form__textarea" name="commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__wrapper wrapper">
           <legend class="form__legend">Дополнительно</legend>
           <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
           <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
@@ -76,11 +84,15 @@
           <input class="form__checkbox" type="checkbox" name="milk" id="milk">
           <label class="form__label" for="vitamines">Витамины</label>
           <input class="form__checkbox" type="checkbox" name="vitamines" id="vitamines">
-        </fieldset>
-        <button class="form__btn btn" type="submit">Отправить заявку</button>
-        <small class="form__small-text"><sup>*</sup> &mdash; Обязательные поля</small>
-      </form>
-    </div>
+          <div class="form__submit">
+            <button class="form__btn btn" type="submit">Отправить заявку</button>
+            <small class="form__small-text">
+              <sup>*</sup> &mdash; Обязательные поля
+            </small>
+          </div>
+        </div>
+      </fieldset>
+    </form>
   </main>
 
   <footer class="page-footer page-footer--grey">
