@@ -1,0 +1,30 @@
+.site-list {
+  font-family: "OswaldMedium", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  display: block;
+  padding: 25px 25px;
+
+  border-top: 1px solid #e6e6e6;
+  color: #111111;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .site-list__link {
+    padding: 0;
+    padding-left: 36px;
+
+    border: none;
+  }
+}

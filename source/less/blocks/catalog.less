@@ -1,0 +1,29 @@
+.catalog__list {
+  .no-style();
+}
+
+.catalog__item {
+  padding: 24px 0;
+  border-top: 1px solid #ededed;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 431px;
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    width: 245px;
+    margin-top: 142px;
+  }
+}
