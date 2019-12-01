@@ -41,7 +41,7 @@
         </p>
       </div>
       <fieldset class="form__fieldset">
-        <div class="form__wrapper wrapper">
+        <div class="form__wrapper form__flex-wrapper wrapper">
           <ul class="form__input-list">
             <li>
               <label class="form__label" for="cat-name">Имя:*</label>
@@ -68,8 +68,8 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="form__input-list">
+          <h2 class="form__legend">Контактные данные (владельца кота)</h2>
+          <ul class="form__input-list form__flex-wrapper">
             <li>
               <label class="form__label" for="email">E-mail:*</label>
               <input class="form__input" type="email" name="user-email" id="email" value="Kuklachev@gmail.com" required>
@@ -83,21 +83,31 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
-          <legend class="form__legend">Комментарий</legend>
+          <h2 class="form__legend">Комментарий</h2>
           <textarea class="form__textarea" name="commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
-          <legend class="form__legend">Дополнительно</legend>
-          <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
-          <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
-          <label class="form__label" for="water">Питьевая вода</label>
-          <input class="form__checkbox" type="checkbox" name="water" id="water">
-          <label class="form__label" for="milk">Молоко</label>
-          <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-          <label class="form__label" for="vitamines">Витамины</label>
-          <input class="form__checkbox" type="checkbox" name="vitamines" id="vitamines">
+          <h2 class="form__legend">Дополнительно</h2>
+          <ul class="form__input-list form__flex-wrapper">
+            <li>
+              <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
+              <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+            </li>
+            <li>
+              <label class="form__label" for="water">Питьевая вода</label>
+              <input class="form__checkbox" type="checkbox" name="water" id="water">
+            </li>
+            <li>
+              <label class="form__label" for="milk">Молоко</label>
+              <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+            </li>
+            <li>
+              <label class="form__label" for="vitamines">Витамины</label>
+              <input class="form__checkbox" type="checkbox" name="vitamines" id="vitamines">
+            </li>
+          </ul>
           <div class="form__submit">
             <button class="form__btn btn" type="submit">Отправить заявку</button>
             <small class="form__small-text">
