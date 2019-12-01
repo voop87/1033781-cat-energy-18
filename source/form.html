@@ -42,7 +42,7 @@
       </div>
       <fieldset class="form__fieldset">
         <div class="form__wrapper form__flex-wrapper wrapper">
-          <ul class="form__input-list">
+          <ul class="form__input-list form__half-width">
             <li>
               <label class="form__label" for="cat-name">Имя:*</label>
               <input class="form__input" type="text" name="cat-name" id="cat-name" value="Барсик" required>
@@ -56,25 +56,31 @@
               <input class="form__input" type="number" name="cat-age" id="cat-age" value="7">
             </li>
           </ul>
-          <div class="form__radio-group">
-            <label class="form__label" for="losing-weight">Похудение</label>
-            <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked>
-            <label class="form__label" for="mass-gain">Набор массы</label>
-            <input class="form__radio" type="radio" name="fit-programm" id="mass-gain" value="mass-gain">
-            <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-            <input class="form__radio" type="radio" name="fit-programm" id="need-advice" value="need-advice">
-          </div>
+          <ul class="form__radio-group form__half-width">
+            <li>
+              <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked>
+              <label class="form__label" for="losing-weight">Похудение</label>
+            </li>
+            <li>
+              <input class="form__radio" type="radio" name="fit-programm" id="mass-gain" value="mass-gain">
+              <label class="form__label" for="mass-gain">Набор массы</label>
+            </li>
+            <li>
+              <input class="form__radio" type="radio" name="fit-programm" id="need-advice" value="need-advice">
+              <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
           <h2 class="form__legend">Контактные данные (владельца кота)</h2>
           <ul class="form__input-list form__flex-wrapper">
-            <li>
+            <li class="form__half-width">
               <label class="form__label" for="email">E-mail:*</label>
               <input class="form__input" type="email" name="user-email" id="email" value="Kuklachev@gmail.com" required>
             </li>
-            <li>
+            <li class="form__half-width">
               <label class="form__label" for="user-phone">Телефон:*</label>
               <input class="form__input" type="tel" name="user-phone" id="user-phone" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="8 (960) 900-60-90" required>
             </li>
@@ -90,22 +96,22 @@
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
           <h2 class="form__legend">Дополнительно</h2>
-          <ul class="form__input-list form__flex-wrapper">
+          <ul class="form__input-list form__checkbox-list form__flex-wrapper">
             <li>
-              <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
               <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+              <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
             </li>
             <li>
-              <label class="form__label" for="water">Питьевая вода</label>
               <input class="form__checkbox" type="checkbox" name="water" id="water">
+              <label class="form__label" for="water">Питьевая вода</label>
             </li>
             <li>
-              <label class="form__label" for="milk">Молоко</label>
               <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="form__label" for="milk">Молоко</label>
             </li>
             <li>
-              <label class="form__label" for="vitamines">Витамины</label>
               <input class="form__checkbox" type="checkbox" name="vitamines" id="vitamines">
+              <label class="form__label" for="vitamines">Витамины</label>
             </li>
           </ul>
           <div class="form__submit">
@@ -120,7 +126,7 @@
   </main>
 
   <footer class="page-footer page-footer--grey">
-    <div class="page-footer__top wrapper">
+    <div class="page-footer__top page-footer__top-wrapper wrapper">
       <b class="page-footer__promo">Приглашаем к сотрудничеству дилеров!</b>
       <address class="page-footer__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
