@@ -122,10 +122,14 @@
         </div>
         <div class="example__half-width">
           <div class="example__slider slider">
-            <img class="slider__image" src="https://via.placeholder.com/150x150" alt="Фото кота 'Было'">
-            <img class="slider__image" src="https://via.placeholder.com/150x150" alt="Фото кота 'Стало'" hidden>
-            <button class="slider__control slider__control--active" type="button">Было</button>
-            <button class="slider__control" type="button">Стало</button>
+            <picture>
+              <img class="slider__image" src="img/before-mobile@1x.png" width="280" height="240" alt="Фото кота 'Было'">
+              <img class="slider__image" src="img/after-mobile@1x.png" width="280" height="248" alt="Фото кота 'Стало'" hidden>
+            </picture>
+            <div class="slider__control-bar">
+              <button class="slider__control slider__control--active" type="button">Было</button>
+              <button class="slider__control" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </div>
