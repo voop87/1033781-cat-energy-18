@@ -11,13 +11,17 @@
 
   <header class="page-header">
     <div class="page-header__wrapper wrapper main-nav--opened">
-      <a class="page-header__logo logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="193" height="40" alt="Логотип Cat Energy">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="../img/logo-desktop.svg">
+          <source media="(min-width: 738px)" srcset="../img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="193" height="40" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="main-nav">
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list-index">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--active">Главная</a>
         </li>
@@ -34,10 +38,12 @@
   <main class="page-main">
     <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
     <section class="promo">
-      <div class="wrapper">
+      <div class="promo__wrapper wrapper">
         <h2 class="promo__title section-title">Функциональное питание для котов</h2>
         <b class="promo__slogan">Занялся собой? Займись котом!</b>
-        <img class="promo__image" src="https://via.placeholder.com/150x150" alt="Фото банки кошачьего корма">
+        <picture>
+          <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото банки кошачьего корма">
+        </picture>
         <a class="promo__to-form btn" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -47,7 +53,7 @@
         <h2 class="visually-hidden">Каталог продукции</h2>
         <ul class="fit-programms__list">
           <li class="fit-programms__item fit-programm-card">
-            <h3 class="fit-programm-card__title">Похудение</h3>
+            <h3 class="fit-programm-card__title fit-programm-card__title--slim">Похудение</h3>
             <p class="fit-programm-card__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
@@ -56,7 +62,7 @@
             </a>
           </li>
           <li class="fit-programms__item fit-programm-card">
-            <h3 class="fit-programm-card__title">Набор массы</h3>
+            <h3 class="fit-programm-card__title fit-programm-card__title--pro">Набор массы</h3>
             <p class="fit-programm-card__description">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -107,7 +113,7 @@
           <div class="example__data-wrapper">
             <dl class="example__list">
               <dt>Снижение веса</dt>
-              <dd>5кг</dd>
+              <dd>5 кг</dd>
               <dt>Затрачено времени</dt>
               <dd>60 дней</dd>
             </dl>

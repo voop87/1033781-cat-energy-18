@@ -16,19 +16,18 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 24px;
+  width: 18px;
   height: 18px;
 
   background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
-  background-size: 24px 18px;
 }
 
 .main-nav--opened .main-nav__toggle {
   width: 18px;
   height: 18px;
+  margin-right: 3px;
 
   background: url("../img/icon-close.svg") no-repeat 50% 50%;
-  background-size: 18px 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,5 +42,12 @@
   .main-nav__list {
     min-width: 480px;
     display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    min-width: 570px;
   }
 }

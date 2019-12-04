@@ -68,10 +68,13 @@
 }
 
 .form__radio-group {
+  .no-style();
+
   margin-top: 23px;
 }
 
 .form__legend {
+  display: table;
   max-width: 230px;
   margin: 0;
   margin-top: -17px;
@@ -96,11 +99,48 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .form__wrapper {
     width: 628px;
   }
 
   .form__title {
     margin-left: -40px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__text {
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    width: 1220px;
+  }
+
+  .form__title {
+    margin-left: 0;
+  }
+
+  .form__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__half-width {
+    width: 570px;
+  }
+
+  .form__checkbox-list li {
+    width: 245px;
   }
 }

@@ -1,4 +1,7 @@
 .promo {
+  min-height: 304px;
+  margin-bottom: 197px;
+
   font-weight: 200;
 
   background-color: #64a83b;
@@ -7,7 +10,12 @@
   background-position: 50% 0;
 }
 
+.promo__wrapper {
+  position: relative;
+}
+
 .promo__title {
+  padding: 27px 0 24px;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -24,7 +32,19 @@
   text-transform: uppercase;
 }
 
+.promo__image {
+  position: absolute;
+  top: 165px;
+}
+
 .promo__to-form {
+  position: absolute;
+  left: 0;
+  top: 439px;
+  right: 0;
+
+  padding: 11px 26px;
+
   font-size: 14px;
   line-height: 18px;
 }
@@ -51,7 +71,7 @@
       content: "";
 
       position: absolute;
-      top: 0;
+      top: -54px;
       right: 0;
       z-index: -1;
 
