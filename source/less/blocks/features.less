@@ -9,7 +9,47 @@
 }
 
 .features__item {
+  position: relative;
+
+  min-height: 60px;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -1px;
+    left: -80px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: @green-color;
+  }
+
+  &--health::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--boiler::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--food::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 .features__description {
