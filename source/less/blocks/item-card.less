@@ -1,5 +1,5 @@
 .item-card {
-  padding: 21px 0 25px;
+  padding-bottom: 25px;
 }
 
 .item-card__flex-wrapper {
@@ -10,9 +10,14 @@
   width: 140px;
 }
 
+.item-card a {
+  text-decoration: none;
+}
+
 .item-card__title {
   width: 75px;
   margin: 0;
+  margin-top: 25px;
 
   font-size: inherit;
   color: #111111;
@@ -20,17 +25,41 @@
 }
 
 .item-card__data {
+  margin-top: 12px;
+
   font-family: @arial;
   font-size: 12px;
   line-height: 16px;
+
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .item-card__field {
+  width: 70px;
+  padding: 0;
+
   font-weight: normal;
+  text-align: start;
+}
+
+.item-card__value,
+.item-card__price {
+  width: 70px;
+  padding: 0;
+
+  text-align: end;
 }
 
 .item-card__price {
   text-transform: uppercase;
+}
+
+.item-card__btn {
+  padding: 10px 26px;
+
+  font-size: 16px;
 }
 
 @media (min-width: @tablet-width) {
