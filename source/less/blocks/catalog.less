@@ -1,5 +1,7 @@
 .catalog__title {
-  padding: 14px 0 28px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 15px 0 28px;
 }
 
 .catalog__list {
@@ -8,6 +10,10 @@
 
 .catalog__item {
   border-top: 1px solid #ededed;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 @media (min-width: @tablet-width) {
