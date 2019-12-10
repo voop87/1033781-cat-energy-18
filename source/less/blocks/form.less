@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 
   font-weight: 400;
   line-height: 18px;
@@ -74,7 +74,10 @@
 
 .form__textarea {
   width: 100%;
-  min-height: 148px;
+  min-height: 150px;
+  padding: 12px 13px 12px 14px;
+
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
 }
 
@@ -106,10 +109,7 @@
 .form__legend {
   display: table;
   max-width: 230px;
-  margin: 0;
-  margin-top: -17px;
-  margin-left: -20px;
-  margin-right: 76px;
+  margin: -17px 76px 34px -20px;
   padding-left: 20px;
   padding-right: 22px;
 
@@ -121,12 +121,39 @@
   background-color: #ffffff;
 }
 
+.form__checkbox-list li {
+    display: block;
+    margin-top: 12px;
+    padding: 5px 15px 7px 45px;
+
+    text-align: start;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__submit {
+  margin-top: 35px;
+}
+
+.form__btn {
+  width: 280px;
+  padding: 11px 26px;
+
+  font-size: 16px;
+}
+
 .form__small-text {
+  display: block;
+  margin-top: 20px;
+
   font-family: @arial;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
   text-transform: none;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
