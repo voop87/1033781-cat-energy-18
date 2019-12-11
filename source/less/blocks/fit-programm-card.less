@@ -152,3 +152,49 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .fit-programm-card__title {
+    padding-left: 160px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 41px;
+      left: 66px;
+
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: 69px;
+      left: 34px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .fit-programm-card__description {
+    width: 462px;
+    margin-top: 74px;
+
+    &--for-tablet {
+      display: inline;
+    }
+  }
+
+  .fit-programm-card__catalog-link {
+    margin-top: 31px;
+
+    &--pro::after {
+      top: 5px;
+    }
+  }
+}

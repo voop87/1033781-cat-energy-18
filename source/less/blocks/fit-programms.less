@@ -24,6 +24,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .fit-programms {
+    margin-top: 0;
+  }
+
   .fit-programms__list {
     margin-top: 80px;
     display: flex;
@@ -32,8 +36,12 @@
 
   .fit-programms__item {
     width: 570px;
-    margin-top: 0;
+    padding-bottom: 62px;
 
     box-sizing: border-box;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
   }
 }
