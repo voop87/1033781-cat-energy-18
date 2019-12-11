@@ -8,6 +8,21 @@
   padding: 22px 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .fit-programms {
+    margin-top: -4px;
+  }
+
+  .fit-programms__item {
+    margin-top: 0;
+    padding: 76px 53px 61px;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .fit-programms__list {
     margin-top: 80px;
