@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 
   font-weight: 400;
   line-height: 18px;
@@ -8,18 +8,25 @@
 }
 
 .form__title {
+  padding: 15px 0 24px;
+
   text-transform: none;
 }
 
 .form__text {
   margin: 0;
   padding: 0;
+  width: 230px;
 
   font-size: 14px;
   color: #111111;
 }
 
 .form__fieldset:nth-child(2) {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
   border: none;
 }
 
@@ -42,10 +49,14 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  & li:first-child {
+    margin-top: 0;
+  }
 }
 
 .form__label {
-  padding-right: 14px;
+  padding: 0 14px 3px 0;
 }
 
 .form__input,
@@ -56,14 +67,17 @@
 
 .form__input {
   flex-grow: 1;
-  padding: 14px 15px 15px;
+  padding: 11px 15px 14px;
 
   border: 1px solid #e6e6e6;
 }
 
 .form__textarea {
   width: 100%;
-  min-height: 148px;
+  min-height: 150px;
+  padding: 12px 13px 12px 14px;
+
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
 }
 
@@ -71,14 +85,31 @@
   .no-style();
 
   margin-top: 23px;
+  padding: 21px 0 25px;
+
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__radio-group li {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding: 5px 10px 3px 65px;
+  max-width: 280px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio {
+  display: none;
 }
 
 .form__legend {
   display: table;
   max-width: 230px;
-  margin: 0;
-  margin-top: -17px;
-  margin-left: -20px;
+  margin: -17px 76px 34px -20px;
   padding-left: 20px;
   padding-right: 22px;
 
@@ -90,12 +121,39 @@
   background-color: #ffffff;
 }
 
+.form__checkbox-list li {
+  display: block;
+  margin-top: 12px;
+  padding: 5px 15px 7px 45px;
+
+  text-align: start;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__submit {
+  margin-top: 35px;
+}
+
+.form__btn {
+  width: 280px;
+  padding: 11px 26px;
+
+  font-size: 16px;
+}
+
 .form__small-text {
+  display: block;
+  margin-top: 20px;
+
   font-family: @arial;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
   text-transform: none;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {

@@ -1,12 +1,26 @@
+.additional-card {
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 .additional-card__title {
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .additional-card__description {
+  margin-top: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
   font-family: @arial;
   font-size: 14px;
   line-height: 14px;
@@ -14,6 +28,12 @@
 
 .additional-card__price {
   text-transform: uppercase;
+}
+
+.additional-card__btn {
+  padding: 10px 26px;
+
+  font-size: 16px;
 }
 
 @media (min-width: @desktop-width) {

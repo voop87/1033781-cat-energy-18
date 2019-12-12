@@ -8,7 +8,13 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+
   display: block;
+  width: 18px;
+  height: 18px;
   padding: 0;
 
   cursor: pointer;
@@ -16,23 +22,17 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 18px;
-  height: 18px;
-
   background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
 }
 
 .main-nav--opened .main-nav__toggle {
-  width: 18px;
-  height: 18px;
-  margin-right: 3px;
-
   background: url("../img/icon-close.svg") no-repeat 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     min-height: unset;
+    margin: 0;
   }
 
   .main-nav__toggle {

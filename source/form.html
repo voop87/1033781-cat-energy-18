@@ -10,13 +10,17 @@
 <body>
 
   <header class="page-header">
-    <div class="page-header__wrapper wrapper main-nav--opened">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="193" height="40" alt="Логотип Cat Energy">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="page-header__wrapper">
+      <div class="wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="193" height="40" alt="Логотип Cat Energy">
+        </a>
+      </div>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -56,21 +60,22 @@
               <input class="form__input" type="number" name="cat-age" id="cat-age" value="7">
             </li>
           </ul>
-          <ul class="form__radio-group form__half-width">
-            <li>
-              <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked>
-              <label class="form__label" for="losing-weight">Похудение</label>
-            </li>
-            <li>
-              <input class="form__radio" type="radio" name="fit-programm" id="mass-gain" value="mass-gain">
-              <label class="form__label" for="mass-gain">Набор массы</label>
-            </li>
-            <li>
-              <input class="form__radio" type="radio" name="fit-programm" id="need-advice" value="need-advice">
-              <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
         </div>
+
+        <ul class="form__radio-group form__half-width">
+          <li>
+            <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked>
+            <label class="form__label" for="losing-weight">Похудение</label>
+          </li>
+          <li>
+            <input class="form__radio" type="radio" name="fit-programm" id="mass-gain" value="mass-gain">
+            <label class="form__label" for="mass-gain">Набор массы</label>
+          </li>
+          <li>
+            <input class="form__radio" type="radio" name="fit-programm" id="need-advice" value="need-advice">
+            <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="form__fieldset">
         <div class="form__wrapper wrapper">
@@ -117,7 +122,7 @@
           <div class="form__submit">
             <button class="form__btn btn" type="submit">Отправить заявку</button>
             <small class="form__small-text">
-              <sup>*</sup> &mdash; Обязательные поля
+              * &mdash; Обязательные поля
             </small>
           </div>
         </div>
@@ -127,7 +132,10 @@
 
   <footer class="page-footer page-footer--grey">
     <div class="page-footer__top page-footer__top-wrapper wrapper">
-      <b class="page-footer__promo">Приглашаем к сотрудничеству дилеров!</b>
+      <b class="page-footer__promo">
+        Приглашаем<br>
+        к сотрудничеству дилеров!
+      </b>
       <address class="page-footer__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </address>

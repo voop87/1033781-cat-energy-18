@@ -1,13 +1,11 @@
-.page-header {
-  border-bottom: 1px solid #e6e6e6;
-}
-
 .page-header__wrapper {
   min-height: 65px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
@@ -18,7 +16,9 @@
   .page-header {
     width: 708px;
     min-height: 58px;
-    margin: 24px auto 0;
+    margin: 0 auto;
+    padding: 20px 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +28,19 @@
 
   .page-header__wrapper {
     min-height: unset;
-
     display: block;
+
+    border: none;
   }
 
-  .page-header__logo {
-    width: 176px;
+  .page-header__wrapper .wrapper {
+    width: auto;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+    padding-bottom: 2px;
   }
 }
 
@@ -42,6 +49,11 @@
     position: relative;
 
     width: 1220px;
-    margin-top: 54px;
+    padding-top: 54px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    padding-bottom: 9px;
   }
 }
