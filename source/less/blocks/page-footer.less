@@ -116,6 +116,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   .page-footer__top-wrapper {
     width: 570px;
     padding: 66px 77px 63px;
@@ -130,5 +141,9 @@
 
   .page-footer__address {
     width: 155px;
+  }
+
+  .page-footer__map {
+    height: 400px;
   }
 }
