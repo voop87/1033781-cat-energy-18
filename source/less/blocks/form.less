@@ -59,8 +59,8 @@
   padding: 0 14px 3px 0;
 }
 
-.form__input,
-.form__textarea {
+.form__input::placeholder,
+.form__textarea::placeholder {
   color: #444444;
   text-transform: uppercase;
 }
@@ -167,6 +167,7 @@
   }
 
   .form__title {
+    margin-top: 15px;
     margin-left: -40px;
 
     font-size: 60px;
@@ -175,8 +176,34 @@
 
   .form__text {
     width: 330px;
+    margin-top: 31px;
+
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form__fieldset:nth-child(2) {
+    margin-top: 68px;
+  }
+
+  .form__input-list li {
+    margin-top: 22px;
+  }
+
+  .form__radio-group {
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 72px;
+    padding: 28px 0 32px;
+
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+
+    & li {
+      margin: 0;
+      margin-bottom: 25px;
+      padding-left: 88px;
+    }
   }
 }
 
