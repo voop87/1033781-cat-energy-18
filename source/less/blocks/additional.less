@@ -93,14 +93,22 @@
 
 @media (min-width: @desktop-width) {
   .additional {
-    margin: 98px 0 132px;
+    margin: 98px 0 86px;
 
     border-top: 3px solid @green-color;
+  }
+
+  .additional__title {
+    margin: -59px 846px 46px -38px;
   }
 
   .additional__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .additional__list {
+    width: 895px;
   }
 
   .additional__item {
@@ -114,6 +122,17 @@
     margin: 0;
 
     background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-position: 50% 0;
+    background-size: 245px 289px;
+  }
+
+  .additional__promo-text {
+    padding-top: 187px;
+    padding-left: 0;
+
+    text-align: center;
+
+    &::before {
+      left: 54px;
+    }
   }
 }
