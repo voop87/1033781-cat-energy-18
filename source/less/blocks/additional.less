@@ -18,14 +18,10 @@
   .no-style();
 }
 
-.additional__item {
-  padding: 12px 0 17px;
-}
-
 .additional__promo {
   margin: 39px 0 35px;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
 
   background-color: @green-color;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -65,13 +61,33 @@
     margin-top: 89px;
   }
 
+  .additional__title {
+    margin: -59px 297px 46px -1px;
+    padding: 34px 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   .additional__promo {
+    width: 708px;
     min-height: 200px;
     margin: 69px 0 76px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: 0 0;
     background-size: 708px 200px;
+  }
+
+  .additional__promo-text {
+    padding-top: 72px;
+    padding-left: 299px;
+
+    text-align: start;
+
+    &::before {
+      left: -33px;
+    }
   }
 }
 
