@@ -30,12 +30,28 @@
   position: relative;
 
   width: 100%;
-  height: 363px;
+  height: 361px;
 
   background-color: #f2f2f2;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 96%;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 139px;
+    left: 129px;
+
+    width: 62px;
+    height: 53px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    transform: scale(0.5);
+  }
 }
 
 .page-footer__bottom {
@@ -44,13 +60,13 @@
 
 .page-footer__logo-link {
   display: block;
-  padding: 40px 0 27px;
+  padding: 40px 0 28px;
 
   text-align: center;
 }
 
 .page-footer__social {
-  padding: 22px 0 21px;
+  padding: 22px 0 20px;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;

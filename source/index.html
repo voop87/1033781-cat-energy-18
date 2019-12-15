@@ -137,18 +137,22 @@
         </div>
         <div class="example__half-width">
           <div class="example__slider slider">
-            <picture>
-              <img class="slider__image" id="slider__image--before" src="img/before-mobile@1x.png" width="280" height="240" alt="Фото кота 'Было'">
-              <img class="slider__image" id="slider__image--after" src="img/after-mobile@1x.png" width="280" height="240" alt="Фото кота 'Стало'" hidden>
-            </picture>
+            <div class="slider__container">
+              <picture>
+                <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" width="280" height="240" alt="Фото кота 'Было'">
+              </picture>
+              <picture>
+                <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" width="280" height="240" alt="Фото кота 'Стало'">
+              </picture>
+            </div>
             <div class="slider__control-bar">
-              <button class="slider__control" id="slider__control--before" type="button">
+              <button class="slider__control" onclick="showSlide(this.value, '--left')" value="100%" type="button">
                 Было
               </button>
               <div class="slider__progress-bar">
-                <div class="slider__progress" id="slider__progress"></div>
+                <div class="slider__progress slider__progress--left"></div>
               </div>
-              <button class="slider__control" id="slider__control--after" type="button">
+              <button class="slider__control" onclick="showSlide(this.value, '--right')" value="0" type="button">
                 Стало
               </button>
             </div>
@@ -195,5 +199,9 @@
     </div>
   </footer>
   <script src="js/app.js"></script>
+  <script src="js/slider.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
+  </script>
 </body>
 </html>
