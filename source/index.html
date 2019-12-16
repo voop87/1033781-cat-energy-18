@@ -136,7 +136,7 @@
           </div>
         </div>
         <div class="example__half-width">
-          <div class="example__slider slider">
+          <div class="example__slider example__slider--before slider ">
             <div class="slider__container">
               <picture>
                 <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" width="280" height="240" alt="Фото кота 'Было'">
@@ -146,13 +146,13 @@
               </picture>
             </div>
             <div class="slider__control-bar">
-              <button class="slider__control" onclick="showSlide(this.value, '--left')" value="100%" type="button">
+              <button class="slider__control" onclick="showSlide(this.value, '--before')" value="100%" type="button">
                 Было
               </button>
               <div class="slider__progress-bar">
-                <div class="slider__progress slider__progress--left"></div>
+                <div class="slider__progress slider__progress--before"></div>
               </div>
-              <button class="slider__control" onclick="showSlide(this.value, '--right')" value="0" type="button">
+              <button class="slider__control" onclick="showSlide(this.value, '--after')" value="0" type="button">
                 Стало
               </button>
             </div>
