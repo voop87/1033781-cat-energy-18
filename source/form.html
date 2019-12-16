@@ -21,10 +21,10 @@
         </a>
       </div>
     </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -144,7 +144,9 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </address>
     </div>
-    <div class="page-footer__map"></div>
+    <div class="page-footer__google-map">
+      <div class="page-footer__map"></div>
+    </div>
     <div class="page-footer__bottom">
       <div class="page-footer__bottom-wrapper wrapper">
         <a class="page-footer__logo-link" href="index.html">
@@ -169,5 +171,9 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
+  </script>
 </body>
 </html>

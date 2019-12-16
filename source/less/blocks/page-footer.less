@@ -26,11 +26,18 @@
   font-size: 14px;
 }
 
-.page-footer__map {
+.page-footer__google-map {
   position: relative;
+  z-index: 2;
 
   width: 100%;
   height: 361px;
+}
+
+.page-footer__map {
+  width: 320px;
+  height: 361px;
+  margin: 0 auto;
 
   background-color: #f2f2f2;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -41,15 +48,16 @@
     content: "";
 
     position: absolute;
-    z-index: -1;
-    top: 139px;
-    left: 129px;
+    z-index: 1;
+    top: 117px;
+    left: 112px;
 
-    width: 62px;
-    height: 53px;
+    width: 94px;
+    height: 127px;
 
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
+    background-position: 50% 50%;
     transform: scale(0.5);
   }
 }
@@ -102,7 +110,20 @@
   }
 
   .page-footer__map {
+    width: 768px;
     height: 396px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    &::after {
+      top: 159px;
+      left: 347px;
+
+      width: 94px;
+      height: 127px;
+
+      transform: scale(1);
+    }
   }
 
   .page-footer__bottom-wrapper {
@@ -140,7 +161,7 @@
     position: absolute;
     top: 95px;
     left: 110px;
-    z-index: 1;
+    z-index: 3;
   }
 
   .page-footer__top-wrapper {
@@ -162,6 +183,13 @@
   }
 
   .page-footer__map {
+    width: 1440px;
     height: 400px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    &::after {
+      left: 1014px;
+    }
   }
 }

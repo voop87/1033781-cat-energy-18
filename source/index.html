@@ -21,10 +21,10 @@
         </a>
       </div>
     </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav">
       <ul class="main-nav__list site-list site-list-index">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--active">Главная</a>
@@ -173,7 +173,9 @@
         <span class="page-footer__address--for-tablet">Санкт-Петербург</span>
       </address>
     </div>
-    <div class="page-footer__map"></div>
+    <div class="page-footer__google-map">
+      <div class="page-footer__map"></div>
+    </div>
     <div class="page-footer__bottom">
       <div class="page-footer__bottom-wrapper wrapper">
         <a class="page-footer__logo-link">
