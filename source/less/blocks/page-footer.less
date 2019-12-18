@@ -36,7 +36,6 @@
 
 .page-footer__map {
   width: 320px;
-  height: 361px;
   margin: 0 auto;
 
   background-color: #f2f2f2;
@@ -71,6 +70,14 @@
   padding: 40px 0 28px;
 
   text-align: center;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -109,9 +116,12 @@
     }
   }
 
+  .page-footer__google-map {
+    height: 396px;
+  }
+
   .page-footer__map {
     width: 768px;
-    height: 396px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
 
@@ -182,9 +192,12 @@
     text-align: start;
   }
 
+  .page-footer__google-map {
+    height: 399px;
+  }
+
   .page-footer__map {
     width: 1440px;
-    height: 400px;
 
     background-image: url("../img/bg-map-desktop@1x.png");
 
