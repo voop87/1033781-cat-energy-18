@@ -161,13 +161,22 @@
     margin-top: 255px;
     margin-left: 0;
 
-    background-color: #f2f2f2;
+    &--before {
+      background-color: #f2f2f2;
+    }
+
+    &--after {
+      background-color: #eaeaea;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     margin-top: 82px;
+    padding-bottom: 25px;
+
+    background: linear-gradient(to bottom, #ffffff 27.8%, #f2f2f2 27.8%);
   }
 
   .example__wrapper {
@@ -181,7 +190,48 @@
     width: 50%;
   }
 
+  .example__title {
+    padding-bottom: 75px;
+
+    background-color: #ffffff;
+  }
+
+  .example__description {
+    width: 435px;
+    margin-top: 71px;
+  }
+
   .example__data-wrapper {
     flex-direction: column;
+  }
+
+  .example__list {
+    margin-top: 68px;
+
+    & dt {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .example__cost {
+    margin-top: 51px;
+    width: 328px;
+
+    text-align: start;
+
+    &--for-tablet {
+      display: inline-block;
+      margin-left: 59px;
+
+      text-align: end;
+    }
+  }
+
+  .example__slider {
+    margin-top: 152px;
+
+    &--after {
+      background-color: #f2f2f2;
+    }
   }
 }
