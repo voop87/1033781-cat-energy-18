@@ -43,6 +43,10 @@
   background-repeat: no-repeat;
   background-position: 0 96%;
 
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
   &::after {
     content: "";
 
@@ -125,6 +129,10 @@
 
     background-image: url("../img/bg-map-tablet@1x.png");
 
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+
     &::after {
       top: 159px;
       left: 347px;
@@ -200,6 +208,10 @@
     width: 1440px;
 
     background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
 
     &::after {
       left: 1014px;
