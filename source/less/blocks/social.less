@@ -1,5 +1,6 @@
 .social__list {
   .no-style();
+
   width: 125px;
   margin: 0 auto;
   padding-right: 10px;
@@ -10,7 +11,13 @@
 .social__link {
   font-size: 0;
 
-  &:hover .social__icon {
-    fill: #ffffff;
+  fill: #666666;
+
+  &:hover {
+    fill: @green-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
