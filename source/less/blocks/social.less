@@ -1,6 +1,29 @@
 .social__list {
   .no-style();
 
+  width: 125px;
+  margin: 0 auto;
+  padding-right: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.social__link {
+  font-size: 0;
+
+  fill: #666666;
+
+  &:hover {
+    fill: @green-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-left: 7px;
+  }
 }
