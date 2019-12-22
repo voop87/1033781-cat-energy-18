@@ -95,11 +95,11 @@
           <ul class="form__input-list form__half-width">
             <li>
               <label class="form__label" for="cat-name">Имя:*</label>
-              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" value="Барсик" required>
             </li>
             <li>
               <label class="form__label" for="cat-weight">Вес (кг):*</label>
-              <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[0-9]{2}" min="0" placeholder="7" required>
+              <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[0-9]{2}" min="0" placeholder="7" value="7" required>
             </li>
             <li>
               <label class="form__label" for="cat-age">Возраст (лет):</label>
@@ -129,12 +129,13 @@
           <ul class="form__input-list form__flex-wrapper">
             <li class="form__half-width form__mail">
               <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__input form__input--mail" type="email" name="user-email" id="email" placeholder="Kuklachev@gmail.com" required>
-              <svg class="form__icon" width="19" height="13"><use xlink:href="#icon-mail"></use></svg>
+              <input class="form__input" type="email" name="user-email" id="email" placeholder="Kuklachev@gmail.com" value="Kuklachev@gmail.com" required>
+              <svg class="form__icon form__icon--mail" width="19" height="13"><use xlink:href="#icon-mail"></use></svg>
             </li>
-            <li class="form__half-width">
+            <li class="form__half-width form__phone">
               <label class="form__label" for="user-phone">Телефон:*</label>
-              <input class="form__input" type="tel" name="user-phone" id="user-phone" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
+              <input class="form__input" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90" value="8 (960) 900-60-90" required>
+              <svg class="form__icon form__icon--phone" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
             </li>
           </ul>
         </div>
@@ -199,20 +200,20 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <svg class="social__icon" width="22" height="19"><use xlink:href="#icon-vk"></use></svg>
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--vkontakte" width="22" height="19"><use xlink:href="#icon-vk"></use></svg>
                 Vkontakte
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <svg class="social__icon" width="16.1" height="19"><use xlink:href="#icon-insta"></use></svg>
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--instagram" width="16.1" height="19"><use xlink:href="#icon-insta"></use></svg>
                 Instagram
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <svg class="social__icon" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
                 Facebook
               </a>
             </li>
