@@ -66,7 +66,7 @@
 @media (min-width: @tablet-width) {
   .item-card {
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
   }
 
   .item-card__flex-wrapper {
@@ -79,19 +79,20 @@
 
   .item-card__image {
     width: 250px;
-    height: 172px;
-    margin-top: -46px;
+    margin-top: -26px;
     padding: 0;
 
+    transform: scale(1.3);
+
     &--big {
-      height: 208px;
-      margin-top: -82px;
+      margin-top: -58px;
+      margin-bottom: 5px;
     }
   }
 
   .item-card__title {
     width: 135px;
-    margin: 34px auto 0;
+    margin: 53px auto 0;
 
     font-size: 20px;
     text-align: center;
@@ -122,6 +123,21 @@
 }
 
 @media (min-width: @desktop-width) {
+  .item-card__image {
+    margin-top: -46px;
+
+    transform: none;
+
+    &--big {
+      margin-top: -82px;
+      margin-bottom: 1px;
+    }
+  }
+
+  .item-card__title {
+    margin-top: 29px;
+  }
+
   .item-card__data,
   .item-card__btn {
     width: 170px;

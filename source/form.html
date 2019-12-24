@@ -56,21 +56,21 @@
           <ul class="form__input-list form__half-width">
             <li>
               <label class="form__label" for="cat-name">Имя:*</label>
-              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" value="Барсик" required>
+              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" value="Барсик" required="">
             </li>
             <li>
               <label class="form__label" for="cat-weight">Вес (кг):*</label>
-              <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[0-9]{2}" min="0" placeholder="7" value="7" required>
+              <input class="form__input" type="number" name="cat-weight" id="cat-weight" min="0" placeholder="7" value="7" required="">
             </li>
             <li>
               <label class="form__label" for="cat-age">Возраст (лет):</label>
-              <input class="form__input" type="number" name="cat-age" id="cat-age" pattern="[0-9]{2}" min="0" placeholder="7">
+              <input class="form__input" type="number" name="cat-age" id="cat-age" min="0" placeholder="7">
             </li>
           </ul>
 
           <ul class="form__radio-group form__half-width">
             <li>
-              <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked>
+              <input class="form__radio" type="radio" name="fit-programm" id="losing-weight" value="losing-weight" checked="">
               <label class="form__label" for="losing-weight">Похудение</label>
             </li>
             <li>
@@ -90,12 +90,12 @@
           <ul class="form__input-list form__flex-wrapper">
             <li class="form__half-width form__mail">
               <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__input" type="email" name="user-email" id="email" placeholder="Kuklachev@gmail.com" value="Kuklachev@gmail.com" required>
+              <input class="form__input" type="email" name="user-email" id="email" placeholder="Kuklachev@gmail.com" value="Kuklachev@gmail.com" required="">
               <svg class="form__icon form__icon--mail" width="19" height="13"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </li>
             <li class="form__half-width form__phone">
               <label class="form__label" for="user-phone">Телефон:*</label>
-              <input class="form__input" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90" value="8 (960) 900-60-90" required>
+              <input class="form__input" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90" value="8 (960) 900-60-90" required="">
               <svg class="form__icon form__icon--phone" width="20" height="20"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </li>
           </ul>
@@ -112,7 +112,7 @@
           <h2 class="form__legend">Дополнительно</h2>
           <ul class="form__input-list form__checkbox-list form__flex-wrapper">
             <li>
-              <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+              <input class="form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked="">
               <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
             </li>
             <li>
@@ -190,8 +190,7 @@
     </div>
   </footer>
   <script src="js/app.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
   </script>
   <script async src="js/picturefill.min.js"></script>
 </body>

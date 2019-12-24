@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -49,7 +51,7 @@
         <h2 class="promo__title section-title">Функциональное питание для котов</h2>
         <b class="promo__slogan">Занялся собой? Займись котом!</b>
         <picture>
-          <source type="image/webp" media="(min-width: 1300px" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
@@ -122,9 +124,9 @@
     </section>
 
     <section class="example">
+      <h2 class="example__title section-title">Живой пример</h2>
       <div class="example__wrapper">
         <div class="example__half-width wrapper">
-          <h2 class="example__title section-title">Живой пример</h2>
           <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
@@ -170,7 +172,7 @@
               <div class="slider__progress-bar">
                 <div class="slider__progress slider__progress--before"></div>
               </div>
-              <button class="slider__control" onclick="showSlide(this.value, '--after')" value="0" type="button">
+              <button class="slider__control" onclick="showSlide(this.value, '--after')" value="100%" type="button">
                 Стало
               </button>
             </div>
@@ -232,8 +234,7 @@
   </footer>
   <script src="js/app.js"></script>
   <script src="js/slider.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUD2At3-M6HtuemPUqcEjUykpBfiQQV0&callback=initMap">
   </script>
   <script async src="js/picturefill.min.js"></script>
 </body>
