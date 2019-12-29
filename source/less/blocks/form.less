@@ -248,7 +248,8 @@
     border-color: #bababa;
   }
 
-  &:active {
+  &:active,
+  &:disabled {
     opacity: 0.3;
   }
 }
@@ -258,6 +259,11 @@
   background-repeat: no-repeat;
   background-size: 21px 16px;
   background-position: center;
+}
+
+.form__radio:disabled + .form__label,
+.form__checkbox:disabled + .form__label {
+  opacity: 0.5;
 }
 
 .form__submit {
