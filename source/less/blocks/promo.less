@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
 
-  @media (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px;
   }
@@ -129,7 +129,7 @@
       background-size: cover;
     }
 
-    @media (min-resolution: @retina-dppx) {
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
       &::before {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
