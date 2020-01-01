@@ -9,7 +9,6 @@
 
 .example__title {
   padding-top: 16px;
-  padding-left: 20px;
   padding-bottom: 23px;
 }
 
@@ -27,7 +26,6 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
   margin: 0;
   margin-top: 25px;
 }
@@ -68,6 +66,10 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 2px;
+
+  &:last-child {
+    margin-left: 32px;
+  }
 }
 
 .example__cost {
@@ -95,7 +97,6 @@
 
   .example__title {
     padding-top: 43px;
-    padding-left: 30px;
     padding-bottom: 65px;
   }
 
@@ -121,6 +122,10 @@
 
       font-size: 30px;
       line-height: 37.02px;
+    }
+
+    & dd:last-child {
+      margin-left: 42px;
     }
 
     & dt {
@@ -149,9 +154,9 @@
     margin-top: 63px;
 
     font-size: 20px;
-    text-align: end;
+    text-align: right;
 
-    &--for-tablet {
+    & span {
       display: block;
       margin-top: 9px;
     }
@@ -177,7 +182,7 @@
     margin-top: 82px;
     padding-bottom: 30px;
 
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #ffffff 178px, #f2f2f2 178px);
   }
 
   .example__wrapper {
@@ -190,7 +195,6 @@
   }
 
   .example__title {
-    padding-left: 110px;
     padding-bottom: 75px;
 
     background-color: #ffffff;
@@ -215,15 +219,15 @@
 
   .example__cost {
     margin-top: 51px;
-    width: 328px;
+    width: 340px;
 
-    text-align: start;
+    text-align: left;
 
-    &--for-tablet {
+    & span {
       display: inline-block;
       margin-left: 59px;
 
-      text-align: end;
+      text-align: right;
     }
   }
 

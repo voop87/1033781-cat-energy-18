@@ -80,8 +80,8 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
-    outline: none;
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 
   &:focus + .form__icon {
@@ -125,6 +125,11 @@
 
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
+
+  &:focus {
+    border-color: #444444;
+    outline: 1px solid #444444;
+  }
 }
 
 .form__radio-group {
@@ -243,7 +248,8 @@
     border-color: #bababa;
   }
 
-  &:active {
+  &:active,
+  &:disabled {
     opacity: 0.3;
   }
 }
@@ -253,6 +259,11 @@
   background-repeat: no-repeat;
   background-size: 21px 16px;
   background-position: center;
+}
+
+.form__radio:disabled + .form__label,
+.form__checkbox:disabled + .form__label {
+  opacity: 0.5;
 }
 
 .form__submit {
@@ -443,6 +454,7 @@
   .form__flex-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .form__fieldset:nth-child(2) {

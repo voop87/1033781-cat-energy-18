@@ -1,11 +1,22 @@
 .social__list {
   .no-style();
 
-  width: 125px;
+  width: 250px;
   margin: 0 auto;
-  padding-right: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-left: 37px;
+
+  &:first-child {
+    margin-left: 58px;
+  }
+
+  &:last-child {
+    margin-left: 40px;
+  }
 }
 
 .social__link {
@@ -24,7 +35,19 @@
 
 @media (min-width: @tablet-width) {
   .social__list {
-    padding-left: 7px;
+    width: 300px;
+  }
+
+  .social__item {
+    margin-left: 28px;
+
+    &:first-child {
+      margin-left: 96px;
+    }
+
+    &:last-child {
+      margin-left: 29px;
+    }
   }
 
   .social__icon--vkontakte {

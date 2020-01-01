@@ -23,11 +23,11 @@
   width: 280px;
   min-height: 289px;
 
-  background-color: @green-color;
+  background-color: #6fb346;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  @media (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
     background-size: 280px;
   }
@@ -67,7 +67,7 @@
   }
 
   .additional__title {
-    margin: -59px 297px 46px -1px;
+    margin: -59px 296px 46px -1px;
     padding: 34px 37px;
 
     font-size: 36px;
@@ -82,6 +82,11 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: 0 0;
     background-size: 708px 200px;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 
   .additional__promo-text {
@@ -104,7 +109,7 @@
   }
 
   .additional__title {
-    margin: -59px 846px 46px -38px;
+    margin: -59px 845px 46px -38px;
   }
 
   .additional__wrapper {
@@ -127,7 +132,14 @@
     margin: 0;
 
     background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-size: 245px 289px;
+    background-size: 280px 299px;
+    background-position: -34px 50%;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: 280px 299px;
+      background-position: -34px 50%;
+    }
   }
 
   .additional__promo-text {

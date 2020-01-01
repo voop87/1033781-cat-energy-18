@@ -7,6 +7,7 @@
 
 .slider__image {
   position: absolute;
+  top: 1px;
   left: 17px;
 
   &--before {
@@ -77,6 +78,8 @@
   .slider__image {
     top: -169px;
     left: 7px;
+
+    transform: scale(1);
   }
 
   .slider__control-bar {
@@ -91,6 +94,66 @@
     line-height: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+
+  .slider__progress-bar {
+    width: 428px;
+    height: 6px;
+    margin-top: 7px;
+    margin-left: 1px;
+
+    border-radius: 2px;
+    background-color: #dcdcdc;
+  }
+
+  .slider__progress {
+    top: -15px;
+
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: @green-color;
+      border-radius: 50%;
+    }
+
+    &--before {
+      left: 5px;
+    }
+
+    &--before::after {
+      left: 12px;
+    }
+
+    &--after {
+      left: 387px;
+    }
+
+    &--after::after {
+      left: 12px;
+    }
   }
 }
 
