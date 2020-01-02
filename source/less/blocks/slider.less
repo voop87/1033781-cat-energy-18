@@ -10,6 +10,12 @@
   top: 1px;
   left: 17px;
 
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    top: 16px;
+    left: 20px;
+    transform: scale(1.14);
+  }
+
   &--before {
     width: 100%;
   }
@@ -101,7 +107,7 @@
     }
 
     &:active {
-      border-bottom: none;
+      border-bottom-color: transparent;
     }
   }
 
@@ -122,6 +128,7 @@
     height: 34px;
     box-sizing: border-box;
 
+    cursor: pointer;
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
@@ -154,6 +161,20 @@
 
     &--after::after {
       left: 12px;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid @green-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &:active::after {
+      top: 11px;
+      left: 11px;
     }
   }
 }
