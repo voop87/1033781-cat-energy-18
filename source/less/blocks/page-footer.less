@@ -109,7 +109,7 @@
 @media (min-width: @tablet-width) {
   .page-footer__top {
     width: 625px;
-    padding: 65px 0 58px;
+    padding: 65px 41px 58px;
   }
 
   .page-footer__promo {
@@ -123,7 +123,7 @@
     width: 160px;
 
     font-size: 16px;
-    text-align: end;
+    text-align: right;
 
     & span {
       display: block;
@@ -189,10 +189,9 @@
   }
 
   .page-footer__top {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    z-index: 3;
+    position: static;
+
+    margin-top: 94px;
   }
 
   .page-footer__top-wrapper {
@@ -210,7 +209,7 @@
   .page-footer__address {
     width: 155px;
 
-    text-align: start;
+    text-align: left;
   }
 
   .page-footer__map,
@@ -218,7 +217,17 @@
     height: 399px;
   }
 
+  .page-footer__map {
+    position: absolute;
+    z-index: -1;
+    top: -93px;
+
+    width: 100%;
+  }
+
   .page-footer__static-map {
+    z-index: -3;
+
     width: 1440px;
     height: 399px;
 
@@ -226,12 +235,18 @@
 
     @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
       background-image: url("../img/bg-map-desktop@2x.png");
+      background-position: -1047px 69%;
     }
 
     &::after {
+      z-index: -2;
       top: 139px;
       left: 1014px;
     }
+  }
+
+  .page-footer__bottom {
+    margin-top: 104px;
   }
 
   .page-footer__copyright {
