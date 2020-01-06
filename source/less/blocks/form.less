@@ -172,12 +172,7 @@
   margin-top: 13px;
   padding: 0;
 
-  text-align: start;
-}
-
-.form__radio,
-.form__checkbox {
-  display: none;
+  text-align: left;
 }
 
 .form__radio + .form__label {
@@ -264,6 +259,11 @@
 .form__radio:disabled + .form__label,
 .form__checkbox:disabled + .form__label {
   opacity: 0.5;
+}
+
+.form__radio:focus + .form__label::before,
+.form__checkbox:focus + .form__label::before {
+  outline: 1px solid #444444;
 }
 
 .form__submit {
