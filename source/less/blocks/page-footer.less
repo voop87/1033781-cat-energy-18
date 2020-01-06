@@ -30,6 +30,8 @@
   position: relative;
 
   height: 363px;
+
+  background-color: #f2f2f2;
 }
 
 .page-footer__google-map {
@@ -41,38 +43,18 @@
 }
 
 .page-footer__static-map {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 320px;
+  width: auto;
   height: 363px;
   margin: 0 auto;
 
   background-color: #f2f2f2;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 96%;
+  background-position: 50% 0;
 
   @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
     background-image: url("../img/bg-map-mobile@2x.png");
-  }
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    z-index: 1;
-    top: 102px;
-    left: 113px;
-
-    width: 94px;
-    height: 127px;
-
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transform: scale(0.5);
+    background-size: auto 363px;
   }
 }
 
@@ -137,23 +119,15 @@
   }
 
   .page-footer__static-map {
-    width: 768px;
+    width: auto;
     height: 396px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: 50% 0;
 
     @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
       background-image: url("../img/bg-map-tablet@2x.png");
-    }
-
-    &::after {
-      top: 135px;
-      left: 337px;
-
-      width: 94px;
-      height: 127px;
-
-      transform: scale(1);
+      background-size: auto 396px;
     }
   }
 
@@ -188,7 +162,7 @@
     position: relative;
 
     &--grey {
-      background-color: unset;
+      background-color: transparent;
     }
   }
 
@@ -224,7 +198,7 @@
   .page-footer__map {
     position: absolute;
     z-index: -1;
-    top: -93px;
+    top: -94px;
 
     width: 100%;
   }
@@ -232,20 +206,16 @@
   .page-footer__static-map {
     z-index: -3;
 
-    width: 1440px;
+    width: auto;
     height: 399px;
 
     background-image: url("../img/bg-map-desktop@1x.png");
+    background-position: 50% 0;
 
     @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
       background-image: url("../img/bg-map-desktop@2x.png");
-      background-position: -1047px 69%;
-    }
-
-    &::after {
-      z-index: -2;
-      top: 139px;
-      left: 1014px;
+      background-position: 50% 0;
+      background-size: auto 399px;
     }
   }
 
