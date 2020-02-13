@@ -90,7 +90,7 @@ gulp.task("htmlmin", function () {
 
 gulp.task("jsmin", function () {
   return pipeline(
-    gulp.src("source/js/*.js"),
+    gulp.src("build/js/*.js"),
     jsmin(),
     gulp.dest("build/js")
   );
