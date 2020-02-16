@@ -20,7 +20,7 @@ ymaps.ready(function () {
       // Необходимо указать данный тип макета.
       iconLayout: "default#image",
       // Своё изображение иконки метки.
-      iconImageHref: "../Cat-Energy/img/map-pin-google.png",
+      iconImageHref: "../img/map-pin-google.png",
       // Размеры метки.
       iconImageSize: [100, 85],
       // Смещение левого верхнего угла иконки относительно
